@@ -1,0 +1,40 @@
+header{
+   background-color: $colore1;
+   height: 80px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000;
+   @include flexBoxCenter;
+   .logo{
+    margin-right: 250px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: $colore3;
+    
+
+    i{
+        color: $colore4;
+        font-size: 30px;
+    }
+   }
+
+   nav{
+    
+    ul{
+        @include flexBoxCenter;
+        gap: 50px;
+        
+        li{
+            font-size: 1.5em;
+            color: $colore3;
+            &:hover{
+                color: $colore4;
+                cursor: pointer;
+                transition: all .5s;
+            }
+        }
+    }
+   }
+}

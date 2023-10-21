@@ -1,0 +1,53 @@
+footer {
+    background: $colore1;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    margin-top: 50px;
+    height: 350px;
+    .first-item,
+    .second-item,
+    .third-item{
+     display:flex;
+     flex-direction: column;
+}
+.first-item > h5,
+.second-item > h5,
+.third-item > h5{
+  font-size: 20px;
+  color: $colore3;
+  margin-bottom: 30px;
+}
+.first-item > a,
+.second-item > a{
+  font-size: 16px;
+  color: $colore3;
+  margin-bottom: 20px;
+}
+
+
+.third-item > p{
+    font-size: 16px;
+    color: $colore3;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+    
+  }
+  .third-item > p i{
+    cursor: pointer;
+    color: $colore4;
+    
+  }
+  
+.third-item> .icon>i{
+    font-size: larger;
+    margin-top: 30px;
+    padding: 15px;
+    color: $colore4;
+    cursor: pointer;
+    &:hover{
+      color: $colore2;
+    }
+}
+  }

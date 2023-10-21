@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: #186F65;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo {
+  margin-right: 250px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #FCE09B;
+}
+header .logo i {
+  color: #B2533E;
+  font-size: 30px;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+header nav ul li {
+  font-size: 1.5em;
+  color: #FCE09B;
+}
+header nav ul li:hover {
+  color: #B2533E;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.contact {
+  margin-top: 80px;
+}
+.contact img {
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+}
+.contact .home {
+  position: relative;
+  width: 700px;
+  padding: 60px 70px;
+}
+.contact .home h3 {
+  font-size: 3em;
+  text-transform: capitalize;
+  color: #000;
+  color: white;
+  margin-bottom: 50px;
+}
+.contact .home a {
+  font-size: 1em;
+  line-height: 2;
+  color: #FCE09B;
+  font-size: 1.5em;
+  border: 0.1rem solid #186F65;
+  text-transform: capitalize;
+  padding: 10px;
+  background: wheat;
+  color: #186F65;
+}
+.contact .home a:hover {
+  background: #186F65;
+  color: wheat;
+  transition: all 0.5s;
+}
+
+.subject {
+  margin-top: 200px;
+}
+.subject h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  text-transform: capitalize;
+  color: #000;
+}
+.subject .box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0px;
+  flex-wrap: nowrap;
+  padding: 60px 40px;
+  gap: 30px;
+}
+.subject .box-container .box {
+  width: 500px;
+  height: 250px;
+  padding: 30px 20px;
+  background: #B5CB99;
+  text-align: center;
+  cursor: pointer;
+}
+.subject .box-container .box:hover {
+  background: #186F65;
+  color: wheat;
+  transition: all 0.5s;
+}
+
+.course h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0px;
+  flex-wrap: nowrap;
+  font-size: 3em;
+  text-transform: capitalize;
+  color: #000;
+  margin-bottom: 50px;
+}
+.course .box-course {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.course .box-course .box-item {
+  position: relative;
+  height: 25rem;
+  overflow: hidden;
+}
+.course .box-course .box-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: rgb(236, 250, 217);
+}
+.course .box-course .box-item h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 100px;
+  color: #000;
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+footer {
+  background: #186F65;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  margin-top: 50px;
+  height: 350px;
+}
+footer .first-item,
+footer .second-item,
+footer .third-item {
+  display: flex;
+  flex-direction: column;
+}
+footer .first-item > h5,
+footer .second-item > h5,
+footer .third-item > h5 {
+  font-size: 20px;
+  color: #FCE09B;
+  margin-bottom: 30px;
+}
+footer .first-item > a,
+footer .second-item > a {
+  font-size: 16px;
+  color: #FCE09B;
+  margin-bottom: 20px;
+}
+footer .third-item > p {
+  font-size: 16px;
+  color: #FCE09B;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+footer .third-item > p i {
+  cursor: pointer;
+  color: #B2533E;
+}
+footer .third-item > .icon > i {
+  font-size: larger;
+  margin-top: 30px;
+  padding: 15px;
+  color: #B2533E;
+  cursor: pointer;
+}
+footer .third-item > .icon > i:hover {
+  color: #B5CB99;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 2rem;
+  }
+  .contact img {
+    object-fit: cover;
+    width: 100%;
+  }
+  .subject .box-container {
+    flex-direction: column;
+  }
+  .subject h3, p {
+    font-size: 2em;
+  }
+}
+@media (max-width: 648px) {
+  nav {
+    display: none;
+  }
+  .logo {
+    margin-left: 200px;
+    font-size: 2em;
+  }
+  .subject .box-container {
+    flex-direction: column;
+  }
+  .subject h3, p {
+    font-size: 2em;
+  }
+  .course .box-course {
+    flex-direction: column;
+  }
+  .course h3 {
+    display: none;
+  }
+}
+@media (max-width: 648px) {
+  .contact .home h3 {
+    font-size: 2em;
+  }
+  .subject {
+    overflow-y: hidden;
+    margin-top: 300px;
+    height: 1900px;
+  }
+}/*# sourceMappingURL=style.css.map */

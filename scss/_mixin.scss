@@ -1,0 +1,25 @@
+@mixin titleText {
+    font-size:3em ;
+    text-transform: capitalize;
+    color: $colore5;
+}
+
+@mixin graphText {
+    font-size: 1em;
+    line-height: 2;
+    color:$colore3;
+}
+@mixin flexBoxCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexBox($justify: center, $align: center, $direction: row, $gap: 0px, $wrap: nowrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    gap: $gap;
+    flex-wrap: $wrap;
+}
